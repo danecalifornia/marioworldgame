@@ -1,0 +1,30 @@
+body {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 1.5em;
+  margin-top: 2em;
+}
+
+label{
+  padding-right: 1em;
+}
+
+#fightbutton {
+  margin-top: 3.5em;
+  padding: 1em;
+  margin-bottom: 3.5em;
+}
+
+.formcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.container-1 {
+  padding-bottom: 1em;
+}

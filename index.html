@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="script.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Mario World</title>
+</head>
+
+<body>
+  <h1>Mario World</h1>
+  <div class="formcontainer">
+    <form class="" action="index.html" method="post">
+      <div class="container-1">
+        <label for="">Choose Player 1</label>
+        <select id="mySelect1" class="" name="" onchange="selectNum()">
+          <option id="mariochoice" value="Mario">Mario</option>
+          <option id="bowserchoice" value="Bowser">Bowser</option>
+          <option id="peachchoice" value="Princess Peach">Princess Peach</option>
+        </select>
+      </div>
+      <br>
+      <div class="container-2">
+        <label for="">Choose Player 2</label>
+        <select id="mySelect2" class="" name="" onchange="selectNum2()">
+          <option id="mariochoice" value="Mario">Mario</option>
+          <option id="bowserchoice" value="Bowser">Bowser</option>
+          <option id="peachchoice" value="Princess Peach">Princess Peach</option>
+        </select>
+      </div>
+    </form>
+  </div>
+  <center>
+    <button onclick="fightFunction()" id="fightbutton" type="button" name="button">FIGHT</button>
+    <br>
+    <span id="resulttext"></span>
+  </center>
+</body>
+
+</html>

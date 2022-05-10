@@ -1,30 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,400&display=swap");
 body {
-  font-family: 'Comfortaa', cursive;
-  font-weight: 500;
+  background-color: rgba(255, 244, 92, 0.79);
+}
+
+img {
+  width: 100%;
 }
 
 h1 {
+  font-family: "Bangers", cursive;
+  font-size: 5em;
+}
+
+button {
+  font-family: "Bangers", cursive;
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+
+label {
+  font-family: "Bangers", cursive;
+  letter-spacing: 0.15em;
+  font-size: 1.5em;
+}
+
+select {
   display: flex;
   justify-content: center;
-  padding: 1.5em;
-  margin-top: 2em;
 }
 
-label{
-  padding-right: 1em;
+.padding {
+  padding-top: 10em;
 }
 
-#fightbutton {
-  margin-top: 3.5em;
-  padding: 1em;
-  margin-bottom: 3.5em;
+form {
+  padding-bottom: 2em;
 }
 
-.formcontainer {
-  display: flex;
-  justify-content: center;
+.growl-notice {
+  display: none;
+  font-family: "Bangers", cursive;
+  width: 275px;
+  height: 60px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  opacity: 0.9;
+  font-size: 1.2em;
+  color: #fff;
+  background: #BF0025;
+  position: fixed;
+  right: 34px;
+  top: 34px;
+  line-height: 60px;
 }
 
-.container-1 {
-  padding-bottom: 1em;
+@media (max-width: 982px) {
+  .padding {
+    padding-top: 4em;
+    padding-bottom: 6em;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

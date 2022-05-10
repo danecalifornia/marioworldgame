@@ -1,3 +1,11 @@
+// function called when message button is clicked
+function displayGrowl(message) {
+  $('.growl-notice').fadeIn().html(message);
+  setTimeout(function() {
+    $('.growl-notice').fadeOut();
+  }, 2000);
+}
+// JSON mario world setup: characters, attributes, stats
 var mario_world = {
   characters: {
     mario: {

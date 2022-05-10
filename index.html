@@ -4,43 +4,63 @@
 <head>
   <meta charset="utf-8">
   <script src="script.js" charset="utf-8"></script>
+  <!--jQuery Import CDN-->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <!-- Bootstrap Import CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts Link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <!-- Animate.css Framework Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Website Title -->
   <title>Mario World</title>
 </head>
 
 <body>
-  <h1>Mario World</h1>
-  <div class="formcontainer">
-    <form class="" action="index.html" method="post">
-      <div class="container-1">
-        <label for="">Choose Player 1</label>
-        <select id="mySelect1" class="" name="" onchange="selectNum()">
-          <option id="mariochoice" value="Mario">Mario</option>
-          <option id="bowserchoice" value="Bowser">Bowser</option>
-          <option id="peachchoice" value="Princess Peach">Princess Peach</option>
-        </select>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <img class="animate__animated animate__wobble" src="mario.png" alt="">
       </div>
-      <br>
-      <div class="container-2">
-        <label for="">Choose Player 2</label>
-        <select id="mySelect2" class="" name="" onchange="selectNum2()">
-          <option id="mariochoice" value="Mario">Mario</option>
-          <option id="bowserchoice" value="Bowser">Bowser</option>
-          <option id="peachchoice" value="Princess Peach">Princess Peach</option>
-        </select>
+      <div class="col-lg-6 col-md-12 d-flex flex-column align-items-center padding">
+        <h1 class="animate__animated animate__rollIn">Mario World</h1>
+        <div class="formcontainer">
+          <form class="" action="index.html" method="post">
+            <div class="container-1 d-flex flex-column align-items-center">
+              <label for="">Choose Player 1:</label><br>
+              <select id="mySelect1" class="" name="" onchange="selectNum()">
+                <option id="mariochoice" value="Mario">Mario</option>
+                <option id="bowserchoice" value="Bowser">Bowser</option>
+                <option id="peachchoice" value="Princess Peach">Princess Peach</option>
+              </select>
+            </div>
+            <br>
+            <div class="container-2 d-flex flex-column align-items-center">
+              <label for="">Choose Player 2:</label><br>
+              <select id="mySelect2" class="" name="" onchange="selectNum2()">
+                <option id="mariochoice" value="Mario">Mario</option>
+                <option id="bowserchoice" value="Bowser">Bowser</option>
+                <option id="peachchoice" value="Princess Peach">Princess Peach</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <center>
+          <button onclick="fightFunction()" id="fightbutton" type="button" name="button" class="btn btn-warning btn-lg">FIGHT</button>
+          <br>
+          <div class="growl-notice"></div> <!-- Growl Notice, Will only display upon click -->
+          <button href="#" id="activator" onclick="displayGrowl('Thanks for visiting!')" class="btn btn-warning btn-lg">click me for a message</button>
+          <span id="resulttext"></span>
+        </center>
       </div>
-    </form>
+    </div>
   </div>
-  <center>
-    <button onclick="fightFunction()" id="fightbutton" type="button" name="button">FIGHT</button>
-    <br>
-    <span id="resulttext"></span>
-  </center>
+  <!-- Required JS & Popper Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>
